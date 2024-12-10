@@ -5,9 +5,10 @@ import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+
 
 function Home2() {
   return (
@@ -59,6 +60,16 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
+            <li className="social-icons">
+              <a
+              href="mailto:syedazherali01@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-colour  home-social-icons"
+              >
+              <FaEnvelope />
+              </a>
+            </li>
               <li className="social-icons">
                 <a
                   href="https://github.com/SyedAzherAli"
@@ -67,16 +78,6 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://x.com/SyedAzherAli404"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
@@ -91,12 +92,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/im_.ayaan_/"
+                  href="https://x.com/SyedAzherAli404"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour home-social-icons"
+                  className="icon-colour  home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <AiOutlineTwitter />
                 </a>
               </li>
             </ul>
