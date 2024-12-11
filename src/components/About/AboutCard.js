@@ -8,16 +8,19 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi, I am <span className="purple">Syed Azher Ali </span>
+            from <span className="purple"> Hyderabad, India.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            I graduated with a B.Sc. in Computer Science and have developed a strong foundation in DevOps principles and cloud technologies. 
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            My passion lies in automating workflows, ensuring smooth CI/CD pipelines, and building scalable infrastructure that enhances application reliability and performance.
+            <br />
+            Currently, I am focused on mastering tools like Kubernetes, Docker, Terraform, Jenkins, and monitoring platforms like Prometheus and Grafana. 
+            <br />
+            I’m particularly interested in exploring advanced cloud services provided by AWS, Azure, and GCP to create efficient and cost-effective solutions.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Apart from coding and automation, I love:
           </p>
           <ul>
             <li className="about-activity">
@@ -34,7 +37,7 @@ function AboutCard() {
           <p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Syed Azher Ali</footer>
         </blockquote>
       </Card.Body>
     </Card>

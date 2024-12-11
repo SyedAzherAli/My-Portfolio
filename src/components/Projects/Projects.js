@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import cicdbash from "../../Assets/Projects/cicdbash.png";
+import tfbackend from "../../Assets/Projects/tfbackend.png";
+import cicdecr from "../../Assets/Projects/cicdecr.png";
+import djangoops from "../../Assets/Projects/djangoops.png";
 
 function Projects() {
   return (
@@ -21,7 +22,7 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
@@ -41,50 +42,49 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={djangoops}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="DjangoOps"
+              description="Establish a CI/CD pipeline using Jenkins to automate the deployment of a Django application. The pipeline will integrate the application with a Git repository, implement AWS services for enhanced functionality, and ensure seamless deployment to AWS infrastructure. Additionally, AWS resources will be provisioned using Terraform to enable consistent and automated infrastructure management. The objectives include:"
+              ghLink="https://github.com/SyedAzherAli/django-app.git"
+              demoLink="https://projects-devops.hashnode.dev/djangoops#heading-part-13-its-time-for-a-tea-manual"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={tfbackend}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Terraform Shared State file"
+              description="This project sets up Terraform state management using Amazon S3 and DynamoDB to enable team collaboration on infrastructure as code. By leveraging S3 as a remote backend for storing the Terraform state file and DynamoDB for state locking, the setup ensures consistency, security, and prevents conflicts when multiple team members work on the same project."
+              ghLink="https://github.com/SyedAzherAli/terraform_learnings/tree/main/shared-tfstate"
+              demoLink="https://projects-devops.hashnode.dev/terraform-shared-state-file"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={cicdecr}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="CICD using docker private repo"
+              description="This project demonstrates a CI/CD pipeline using Jenkins to automate the build and deployment process for containerized applications. The pipeline integrates with a private Docker registry to securely store container images and deploys the application to an Amazon EKS (Elastic Kubernetes Service) cluster."
+              ghLink="https://github.com/SyedAzherAli/ecr-cicd.git"
+              demoLink="https://projects-devops.hashnode.dev/cicd-using-docker-private-repo"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={cicdbash}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="CI/CD usign Bash Script for Static Website Hosting"
+              description="This project automates the CI/CD workflow for deploying a static website using a single Bash script. The script pulls the latest changes from your GitHub repository and updates the hosted site on your server, ensuring efficient deployment with minimal downtime and manual effort."
+              ghLink="https://github.com/SyedAzherAli/CICDBASH.git"
+              demoLink="https://projects-devops.hashnode.dev/cicd-using-bash-script"
             />
           </Col>
         </Row>
