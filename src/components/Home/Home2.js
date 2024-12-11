@@ -4,11 +4,10 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-
+// import { AiOutlineTwitter } from "react-icons/ai";
 
 function Home2() {
   return (
@@ -90,7 +89,8 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
+              
+              {/* <li className="social-icons">
                 <a
                   href="https://x.com/SyedAzherAli404"
                   target="_blank"
@@ -99,7 +99,8 @@ function Home2() {
                 >
                   <AiOutlineTwitter />
                 </a>
-              </li>
+              </li> */}
+
             </ul>
           </Col>
         </Row>
