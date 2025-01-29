@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { IoTerminal } from "react-icons/io5";
-import { SiPostman } from "react-icons/si";
 import {
   SiVisualstudiocode,
   SiMacos,
@@ -18,9 +17,6 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <IoTerminal />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
       </Col>
     </Row>
   );

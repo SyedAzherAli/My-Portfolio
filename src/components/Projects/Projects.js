@@ -9,6 +9,7 @@ import cicdbash from "../../Assets/Projects/cicdbash.png";
 import tfbackend from "../../Assets/Projects/tfbackend.png";
 import cicdecr from "../../Assets/Projects/cicdecr.png";
 import djangoops from "../../Assets/Projects/djangoops.png";
+import microservice from "../../Assets/Projects/microservice-app.png"
 
 function Projects() {
   return (
@@ -43,13 +44,23 @@ function Projects() {
               demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col> */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={microservice}
+              isBlog={false}
+              title=" DevSecOps Pipeline for Microservices Deployment"
+              description="Built secure CI/CD pipelines (GitOps/DevSecOps) for AWS EKS microservices. Automated cloud infrastructure (VPC, EKS) via Terraform and managed IaC/manifests in Git. Streamlined Docker builds, security scans (Trivy, SonarQube), and ECR image pushes using Jenkins. Deployed apps with ArgoCD, syncing GitHub-to-EKS, and configured traffic routing via AWS Load Balancer/Ingress. Secured private EKS access with a jump server and implemented custom domain."
+              ghLink="https://github.com/SyedAzherAli/microservice-E-commerce.git"
+              demoLink="https://projects-devops.hashnode.dev/end-to-end-devsecops-pipeline-for-microservices-deployment-on-aws-eks-with-gitops"              
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={djangoops}
               isBlog={false}
               title="DjangoOps"
-              description="Establish a CI/CD pipeline using Jenkins to automate the deployment of a Django application. The pipeline will integrate the application with a Git repository, implement AWS services for enhanced functionality, and ensure seamless deployment to AWS infrastructure. Additionally, AWS resources will be provisioned using Terraform to enable consistent and automated infrastructure management. The objectives include:"
+              description="Establish a CI/CD pipeline using Jenkins to automate the deployment of a Django application. The pipeline will integrate the application with a Git repository, implement AWS services for enhanced functionality, and ensure seamless deployment to AWS infrastructure. Additionally, AWS resources will be provisioned using Terraform to enable consistent and automated infrastructure management."
               ghLink="https://github.com/SyedAzherAli/django-app.git"
               demoLink="https://projects-devops.hashnode.dev/djangoops#heading-part-13-its-time-for-a-tea-manual"              
             />

@@ -52,7 +52,7 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
+            {/* <li className="social-icons">
               <a
                 href=" https://x.com/SyedAzherAli404"
                 style={{ color: "white" }}
@@ -61,7 +61,7 @@ function Footer() {
               >
                 <AiOutlineTwitter />
               </a>
-            </li>
+            </li> */}
           </ul>
         </Col>
       </Row>
