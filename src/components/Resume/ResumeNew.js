@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../Assets/../Assets/Syed_Azher_Ali_Devops_Engineer.pdf'; // Import the PDF file
+import resume from '../../Assets/../Assets/Syed Azher Ali - AWS Devops Engineer.pdf'; // Import the PDF file
 
 const Portfolio = () => {
   return (
