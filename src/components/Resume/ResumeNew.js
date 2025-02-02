@@ -7,6 +7,8 @@ const Portfolio = () => {
       <p></p>
       <p></p>
       <p></p>
+      <p></p>
+      <p></p>
       {/* Embed PDF directly on the webpage */}
       <embed
         src={resume}
