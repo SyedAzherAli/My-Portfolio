@@ -4,7 +4,11 @@ import resume from '../../Assets/../Assets/Syed Azher Ali - AWS Devops Engineer.
 const Portfolio = () => {
   return (
     <div>
-      
+
+
+    
+
+  
       {/* Embed PDF directly on the webpage */}
       <embed
         src={resume}
