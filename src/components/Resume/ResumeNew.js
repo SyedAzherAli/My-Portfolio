@@ -4,11 +4,9 @@ import resume from '../../Assets/../Assets/Syed Azher Ali - AWS Devops Engineer.
 const Portfolio = () => {
   return (
     <div>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
+      <h1>Syed Azher Ali </h1> 
+    
+      <p> </p> 
       {/* Embed PDF directly on the webpage */}
       <embed
         src={resume}
