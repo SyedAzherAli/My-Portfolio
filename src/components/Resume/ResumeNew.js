@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <div>
       <p></p>
-      <p></P>
+      <p></p>
       <p></p>
       {/* Embed PDF directly on the webpage */}
       <embed
