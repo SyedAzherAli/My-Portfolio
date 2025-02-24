@@ -1,37 +1,56 @@
-import React from 'react';
-import resume from '../../Assets/../Assets/Syed Azher Ali - AWS Devops Engineer.pdf'; // Import the PDF file
+import React, { useState, useEffect } from "react";
+import { Container, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Particle from "../Particle";
+import pdf from "../../Assets/../Assets/Assets/Syed Azher Ali - AWS Devops Engineer.pdf";
+import { AiOutlineDownload } from "react-icons/ai";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const Portfolio = () => {
+function ResumeNew() {
+  const [width, setWidth] = useState(1200);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
   return (
     <div>
-      <h1>&nbsp;</h1> 
-    
-      <p> </p> 
-      {/* Embed PDF directly on the webpage */}
-      <embed
-        src={resume}
-        type="application/pdf"
-        width="100%"
-        height="700px"
-        title="My Resume"
-      />
+      <Container fluid className="resume-section">
+        <Particle />
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href={pdf}
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+        </Row>
 
-      {/* Or using an iframe */}
-      {/* 
-      <iframe 
-        src={resume}
-        width="100%"
-        height="600px"
-        title="My Resume"
-      ></iframe>
-      */}
-      
-      {/* Alternatively, you can have a download link as well */}
-      {/* <a href={resume} target="_blank" rel="noopener noreferrer">
-        Download My Resume
-      </a> */}
+        <Row className="resume">
+          <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          </Document>
+        </Row>
+
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href={pdf}
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+        </Row>
+      </Container>
     </div>
   );
-};
+}
 
-export default Portfolio;
+export default ResumeNew;
