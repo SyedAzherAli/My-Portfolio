@@ -18,18 +18,18 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
-        // <Particle />
-        // <Row style={{ justifyContent: "center", position: "relative" }}>
-        //   <Button
-        //     variant="primary"
-        //     href={pdf}
-        //     target="_blank"
-        //     style={{ maxWidth: "250px" }}
-        //   >
-        //     <AiOutlineDownload />
-        //     &nbsp;Download CV
-        //   </Button>
-        // </Row>
+        <Particle />
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href={pdf}
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download Resume
+          </Button>
+        </Row>
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
@@ -45,7 +45,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download
+            &nbsp;Download Resume
           </Button>
         </Row>
       </Container>
